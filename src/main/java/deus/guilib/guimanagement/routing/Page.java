@@ -22,7 +22,7 @@ public abstract class Page implements IPage {
 	protected Minecraft mc; // Reference to the Minecraft instance for rendering.
 	protected int width = 0, height = 0; // Dimensions of the page.
 	protected int xSize = 0, ySize = 0; // Additional size configuration for page layout.
-	private Root document; // Represents the root node of the page.
+	protected Root document; // Represents the root node of the page.
 	public final Signal<Tuple<Integer, Integer>> onResizeSignal = new Signal<>(); // Triggered when the page resizes.
 	public Map<String, Object> styles = new HashMap<>(); // Stores styles for the page's elements.
 
